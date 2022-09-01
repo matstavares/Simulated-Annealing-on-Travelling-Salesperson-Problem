@@ -7,4 +7,4 @@ Initial temperature is dynamically set to when 94% of swappings are accepted.
 # Swapping Neighbors
 Until the temperature reaches 20% of initial temperature, it uses the swapping technique of change only one neighbor (each city has 2 diferrent neighbors) to the closest neighboor.
 
-Below 20% the whole city is swapped with another one randomly.
+Below 20%, the whole city is swapped with another one randomly.
