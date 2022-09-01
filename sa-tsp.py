@@ -221,7 +221,7 @@ def next_to(path, id):
     return closest
 
 
-def swapping_neighboors(path, number):
+def swapping_neighbors(path, number):
     
     cidadinha = path.copy()
     city_s = city_d = 0
@@ -251,7 +251,7 @@ def swapping_neighboors(path, number):
 
     return cidadinha
 
-def swapping_neighboors2(path, number):
+def swapping_neighbors2(path, number):
     
     cidadinha = path.copy()
     city_s = city_d = 0
@@ -272,7 +272,7 @@ def swapping_neighboors2(path, number):
 
     return cidadinha
 
-def swapping_neighboors3(path, number):
+def swapping_neighbors3(path, number):
     
     cidadinha = path.copy()
     city_s = city_d = 0
@@ -345,9 +345,9 @@ def sa(setting, alpha, SAmax, T0, TN, N, cooling, s, draw):
             # swaping pairs
             number_pairs = numpy.random.randint(1,6)
             if T < T0*0.20:
-                s_line = swapping_neighboors(s, number_pairs)
+                s_line = swapping_neighbors(s, number_pairs)
             else:
-                s_line = swapping_neighboors3(s, number_pairs)
+                s_line = swapping_neighbors3(s, number_pairs)
 
             events()
             delta = get_distance(s_line) - get_distance(s)
